@@ -13,7 +13,7 @@ IB_DESIGNABLE
 /**
  * Optional delegate.
  */
-@property (nonatomic, weak) IBOutlet id<TTRangeSliderDelegate> delegate;
+@property (nonatomic, weak, nullable) IBOutlet id<TTRangeSliderDelegate> delegate;
 
 /**
  * The minimum possible value to select in the range
@@ -41,7 +41,7 @@ IB_DESIGNABLE
  * Each handle in the slider has a label above it showing the current selected value. By default, this is displayed as a decimal format.
  * You can override this default here by supplying your own NSNumberFormatter. For example, you could supply an NSNumberFormatter that has a currency style, or a prefix or suffix.
  * If this property is nil, the default decimal format will be used. Note: If you want no labels at all, please use the hideLabels flag. */
-@property (nonatomic, strong) NSNumberFormatter *numberFormatterOverride;
+@property (nonatomic, strong) NSNumberFormatter * _Nonnull numberFormatterOverride;
 
 /**
  * Hides the labels above the slider controls. YES = labels will be hidden. NO = labels will be shown. Default is NO.
@@ -51,57 +51,57 @@ IB_DESIGNABLE
 /**
  * The color of the minimum value text label. If not set, the default is the tintColor.
  */
-@property (nonatomic, strong) IBInspectable UIColor *minLabelColour;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull minLabelColour;
 
 /**
  * The color of the maximum value text label. If not set, the default is the tintColor.
  */
-@property (nonatomic, strong) IBInspectable UIColor *maxLabelColour;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull maxLabelColour;
 
 /**
  * The color of both handles. If not set, the default is the tintColor.
  */
-@property (nonatomic, strong) IBInspectable UIColor *handleColor;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull handleColor;
 
 /**
  * The color of the left handle. If not set, the default is the tintColor.
  */
-@property (nonatomic, strong) IBInspectable UIColor *minHandleColor;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull minHandleColor;
 
 /**
  * The color of the right handle. If not set, the default is the tintColor.
  */
-@property (nonatomic, strong) IBInspectable UIColor *maxHandleColor;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull maxHandleColor;
 
 /**
  * The font of the minimum value text label. If not set, the default is system font size 12.
  */
-@property (nonatomic, strong) IBInspectable UIFont *minLabelFont;
+@property (nonatomic, strong) IBInspectable UIFont * _Nonnull minLabelFont;
 
 /**
  * The font of the maximum value text label. If not set, the default is system font size 12.
  */
-@property (nonatomic, strong) IBInspectable UIFont *maxLabelFont;
+@property (nonatomic, strong) IBInspectable UIFont * _Nonnull maxLabelFont;
 
 /**
  * The label displayed in accessibility mode for minimum value handler
  */
-@property (nonatomic, strong) IBInspectable NSString *minLabelAccessibilityLabel;
+@property (nonatomic, strong) IBInspectable NSString * _Nonnull minLabelAccessibilityLabel;
 
 /**
  * The label displayed in accessibility mode for maximum value handler
  */
-@property (nonatomic, strong) IBInspectable NSString *maxLabelAccessibilityLabel;
+@property (nonatomic, strong) IBInspectable NSString * _Nonnull maxLabelAccessibilityLabel;
 
 /**
  * The brief description displayed in accessibility mode for minimum value handler
  */
-@property (nonatomic, strong) IBInspectable NSString *minLabelAccessibilityHint;
+@property (nonatomic, strong) IBInspectable NSString * _Nonnull minLabelAccessibilityHint;
 
 /**
  * The brief description displayed in accessibility mode for maximum value handler
  */
-@property (nonatomic, strong) IBInspectable NSString *maxLabelAccessibilityHint;
+@property (nonatomic, strong) IBInspectable NSString * _Nonnull maxLabelAccessibilityHint;
 
 /**
  * If true, the control will mimic a normal slider and have only one handle rather than a range.
@@ -137,13 +137,13 @@ IB_DESIGNABLE
 /**
  *Handle slider with custom image, you can set custom image for your handle
  */
-@property (nonatomic, strong) UIImage *handleImage;
+@property (nonatomic, strong) UIImage * _Nonnull handleImage;
 
 
 /**
  *Handle slider with custom border color, you can set custom border color for your handle
  */
-@property (nonatomic, strong) UIColor *handleBorderColor;
+@property (nonatomic, strong) UIColor * _Nonnull handleBorderColor;
 
 /**
  *Handle border width (default 0.0)
@@ -163,7 +163,7 @@ IB_DESIGNABLE
 /**
  *Set slider line tint color between handles
  */
-@property (nonatomic, strong) IBInspectable UIColor *tintColorBetweenHandles;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull tintColorBetweenHandles;
 
 /**
  *Set the slider line height (default 1.0)
@@ -173,7 +173,7 @@ IB_DESIGNABLE
 /**
  *Slider line border color
  */
-@property (nonatomic, strong) IBInspectable UIColor *lineBorderColor;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull lineBorderColor;
 
 /**
  *Slider line border width (default 0.0)
